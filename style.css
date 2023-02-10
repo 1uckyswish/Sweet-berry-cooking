@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:#F5F3EF;
+    --card-color: #FFFFFF;
+    --yellow-accent:#FEBD2F;
+    --black-text: #000000;
+    --gray-text: #646464;
+    --outline: #DCDCDC;
+    --font-regular:'Roboto', sans-serif;
+    --font-medium:'Roboto Medium', sans-serif;
+    --font-bold:'Roboto Bold', sans-serif;
+}
+
+p{
+    font-family: var(--font-regular);
+    font-size: 24px;
+}
