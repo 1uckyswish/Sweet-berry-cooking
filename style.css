@@ -51,11 +51,9 @@ a{
 
 .header nav{
     display: flex;
-    width: 100px;
+    width: 13%;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 2px solid red;
-
 }
 
 .header img{
@@ -82,7 +80,7 @@ a{
     background-color: var(--background-color);
     grid-area: slogan;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border: 2px solid red
 }
@@ -90,31 +88,73 @@ a{
 .title-card{
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
 }
 .title-card h1{
     padding-bottom: 20px;
-    font-family: var(--font-regular);
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: lighter;
     font-size: 64px;
 }
 
 .title-card p{
     color: var(--gray-text);
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 .title-image img{
-    border: 5px solid red;
     width: 500px;
 }
 
 
+/* ********************* MAIN BODY CARDS ************** */
 
 .main{
     background-color: deeppink;
     grid-area: main;
 }
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding-bottom: 30px;
+  }
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color:#ECF8F8 ;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 5px 5px 20px gray;
+  width: 90%;
+  gap:10px;
+ box-shadow: 1px 1px 8px 1px black;
+}
+
+.card h3, .card p{
+  padding-inline:20px;
+}
+
+.card button{
+  margin-bottom: 20px;
+  border: none;
+  background-color: #EE6C4D;
+  color: white;
+  border-radius: 12px;
+}
+
+  .card img{
+    width: 100%;
+    border-radius: 13px 13px 0px 0px;
+  }
+
+  .card h3{
+    text-align: center;
+  }
+
 
 .footer{
     background-color:rebeccapurple;
