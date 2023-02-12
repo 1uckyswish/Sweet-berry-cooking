@@ -26,13 +26,13 @@ a{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 470px 600px auto;
     grid-template-areas: 
-    "head head head head"
-    "slogan slogan slogan slogan"
-    "main main main main"
-    "footer footer footer footer";
+    "head head head"
+    "slogan slogan slogan"
+    "main main main"
+    "footer footer footer";
 }
 
 /* ********* end of core styles ********* */
@@ -49,11 +49,12 @@ a{
     align-items: center;
 }
 
-nav{
+.header nav{
     display: flex;
+    width: 100px;
     justify-content: space-between;
-    width: 13%;
     flex-wrap: wrap;
+    border: 2px solid red;
 
 }
 
@@ -81,7 +82,7 @@ nav{
     background-color: var(--background-color);
     grid-area: slogan;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 2px solid red
 }
@@ -105,7 +106,7 @@ nav{
 
 .title-image img{
     border: 5px solid red;
-    width: 80%;
+    width: 500px;
 }
 
 
