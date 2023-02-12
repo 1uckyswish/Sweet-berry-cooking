@@ -26,7 +26,7 @@ a{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 470px 600px auto;
+    grid-template-rows: 100px 600px 570px auto;
     grid-template-areas: 
     "head head head"
     "slogan slogan slogan"
@@ -125,8 +125,47 @@ nav a{
 
 /* ********* START OF MAIN CARDS CSS ********* */
 .main{
-    background-color: deeppink;
+    background-color: var(--background-color);
     grid-area: main;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    padding: 10px 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--card-color);
+    border-radius: 20px;
+}
+#yellow-card{
+    background-color: var(--yellow-accent);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto Serif', serif;
+    align-items: flex-start;
+}
+
+.card p{
+    color: var(--gray-text);
+}
+
+.card button{
+    text-decoration: none;
+    border: none;
+    align-self: flex-start;
+    background-color: white;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid var(--gray-text);
 }
 
 
@@ -134,6 +173,16 @@ nav a{
 
 /* ********** END OF MAIN CARDS CSS ******** */
 .footer{
-    background-color:rebeccapurple;
+    background-color: var(--yellow-accent);
     grid-area: footer;
+    padding: 27px;
+}
+
+.footer-img{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-img img{
+    width: 150px;
 }
