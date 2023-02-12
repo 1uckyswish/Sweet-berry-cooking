@@ -144,6 +144,10 @@ nav a{
     padding: 20px;
     background-color: var(--card-color);
     border-radius: 20px;
+    margin: 20px;
+
+    /* ****NOTE in order to position absolute inside card you have to add a position to the card, usually relative but any will work**** */
+    position: relative;
 }
 #yellow-card{
     background-color: var(--yellow-accent);
@@ -170,17 +174,14 @@ nav a{
 
 .card img:first-child{
     width: 60px;
+
+    /* ****NOTE then we can add position absolute and img will stay positioned inside the container**** */
+    position: absolute;
+    top: -30px;
+    right: 10px;
 }
 
-#knife-logo{
-        position: absolute;
-        right: 40%;
-        top: 105%;
-        background-color: var(--accent-green);
-        color: white;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-}
+
 
 
 
