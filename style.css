@@ -165,13 +165,29 @@ nav a{
     background-color: white;
     padding: 8px;
     border-radius: 15px;
-    border: 1px solid var(--gray-text);
+    border: 1px solid var(--outline);
+}
+
+.card img:first-child{
+    width: 60px;
+}
+
+#knife-logo{
+        position: absolute;
+        right: 40%;
+        top: 105%;
+        background-color: var(--accent-green);
+        color: white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
 }
 
 
 
 
 /* ********** END OF MAIN CARDS CSS ******** */
+
+/* ********* START OF FOOTER CSS ********* */
 .footer{
     background-color: var(--yellow-accent);
     grid-area: footer;
@@ -185,4 +201,56 @@ nav a{
 
 .footer-img img{
     width: 150px;
+}
+
+/* ******** END OF FOOTER & CONTAINER CSS **** */
+
+@media screen and (max-width: 1000px){
+    .slogan{
+        background-color: var(--background-color);
+        grid-area: slogan;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-card{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .title-card h1{
+        padding-bottom: 20px;
+        font-family: var(--font-regular);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        font-family: 'Outfit', sans-serif;
+        font-family: 'Roboto Serif', serif;
+        text-align: center;
+    }
+    
+    .title-card p{
+        color: var(--gray-text);
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    
+    .title-image{
+        margin-left: 150px;
+        align-items: center;
+    }
+
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+}
+
 }
