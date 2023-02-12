@@ -13,7 +13,7 @@ a{
 }
 
 :root{
-    --background-color:#F5F3EF;
+    --background-color: #F5F3EF;
     --card-color: #FFFFFF;
     --yellow-accent:#FEBD2F;
     --black-text: #000000;
@@ -27,7 +27,7 @@ a{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 70px 380px 600px auto;
+    grid-template-rows: 100px 470px 600px auto;
     grid-template-areas: 
     "head head head head"
     "slogan slogan slogan slogan"
@@ -45,7 +45,7 @@ a{
     grid-area: head;
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px 5px 20px;
+    padding: 0px 90px 5px 90px;
     align-items: center;
 }
 
@@ -83,19 +83,29 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    border: 2px solid red
 }
+
 .title-card{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
-    padding: 20px;
+    border: 2px solid green;
 }
+.title-card h1{
+    padding-bottom: 20px;
+    font-family: var(--font-regular);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.title-card p{
+    color: var(--gray-text);
+}
+
 .title-image img{
-    display: flex;
-    height: auto;
-    width: 100%;
-    align-items: center;
+    border: 5px solid red;
+    width: 80%;
 }
 
 
