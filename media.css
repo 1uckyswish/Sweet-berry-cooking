@@ -1,0 +1,16 @@
+@media screen and (max-width: 1000px){
+    .slogan{
+        background-color: var(--background-color);
+        grid-area: slogan;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-card{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
+}
