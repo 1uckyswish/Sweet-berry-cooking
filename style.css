@@ -401,13 +401,15 @@ nav a{
 
     .title-image{
         display: flex;
-        width: 110%;
+        width: 100%;
+        padding: 0;
     }
 
     .title-image img{
         object-fit: cover;
-        width: 110%;
+        width: 100%;
         height: auto;
+        padding: 0;
     }
 
     .card-container{
