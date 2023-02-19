@@ -397,21 +397,18 @@ nav a{
         grid-area: slogan;
         display: flex;
         flex-direction: column;
-        /* border: 3px solid red; */
     }
 
     .title-card{
         width: auto;
         display: flex;
         /* padding: 50px 0 50px 0; */
-        /* border: 2px solid purple; */
     }
 
     .title-card h1{
         font-size: 48px;
         line-height: 55px;
         text-align: center;
-        /* border: 3px solid green; */
         /* margin: 0 0 20px 0; */
     }
     
@@ -419,13 +416,11 @@ nav a{
         font-size: 18px;
         line-height: 24px;
         text-align: center;
-        /* border: 4px dotted purple; */
         letter-spacing: 0.1px;
     }
 
     .title-image{
         display: flex;
-        /* border: 3px solid yellow; */
         width: 110%;
     }
 
@@ -441,7 +436,6 @@ nav a{
         grid-template-rows: 0.1fr repeat(5, 1fr);
         gap: 50px;
         padding: 10px 30px 90px 30px;
-        /* border: 2px solid greenyellow; */
     }
 
 
