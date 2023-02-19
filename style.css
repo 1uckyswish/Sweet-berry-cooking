@@ -351,13 +351,6 @@ nav a{
         "footer footer footer footer";
     }
 
-    /* .card-container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 200px;
-        gap: 60px;
-        padding: 90px 30px;
-    }    */
     .btn{
         display: none;
  }
@@ -366,12 +359,25 @@ nav a{
     visibility: hidden;
     }
 
+
+
     .slogan{
         background-color: var(--background-color);
         grid-area: slogan;
         display: flex;
         flex-direction: column;
     }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+    }
+    
 
     .title-card{
         width: auto;
