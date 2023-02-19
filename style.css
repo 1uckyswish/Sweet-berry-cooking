@@ -55,7 +55,6 @@ nav a{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 19px; */
 }
 
 .img{
@@ -81,7 +80,6 @@ nav a{
     border: none;
     cursor: grabbing;
     font-size: 16px;
-    /* line-height: 19px; */
 }
 
 /* ******************* END OF NAVBAR CSS ************ */
@@ -97,13 +95,11 @@ nav a{
     align-items: center;
     justify-content: space-between;
     padding:  50px 55px;
-    /* border: 2px solid red; */
 }
 
 .title-card{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid green; */
 }
 
 .title-card h1{
@@ -111,11 +107,6 @@ nav a{
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
-    /* line-height: 75px; */
-    /* width: 600px; */
-    /* height: 225px; */
-    /* border: 4px solid red; */
-    /* padding: 0 0 30px 0; */
     margin-bottom: 30px;
     padding-right: 41px;
 }
@@ -127,19 +118,9 @@ nav a{
     font-weight: lighter;
     font-size: 24px;
     text-align: left;
-    /* border: 3px solid brown; */
     padding-right: 86px;
 }
 
-.title-image{
-    /* width: 600px; */
-    /* height: 440px; */
-}
-
-.title-image img{
-    /* width: 600px; */
-    /* height: 440px; */
-}
 /* ********** END OF SLOGAN/TITLE CSS********* */
 
 /* ********* START OF MAIN CARDS CSS ********* */
@@ -153,7 +134,6 @@ nav a{
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     padding: 0 50px;
-    /* border: 2px solid purple; */
 }
 
 .card{
@@ -278,13 +258,11 @@ nav a{
         grid-area: slogan;
         display: flex;
         flex-direction: column;
-        /* border: 2px solid red; */
     }
     /* ************ SLOGAN ********** */
     .title-card{
         width: auto;
         display: flex;
-        /* border: 5px solid purple; */
         margin-bottom: 60px;
     }
 
@@ -296,7 +274,6 @@ nav a{
         font-weight: 500;
         font-size: 48px;
         text-align: center;
-        /* border: 3px solid green; */
         padding: 0;
     }
     
@@ -309,14 +286,13 @@ nav a{
         font-size: 22px;
         line-height: 35px;
         text-align: center;
-        /* border: 4px dotted purple; */
         padding: 0;
         margin: 0;
     }
 
     .title-image{
         display: flex;
-        /* border: 3px solid yellow; */
+
         width: 105%;
     }
 
@@ -331,7 +307,6 @@ nav a{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         padding: 90px 30px;
-        /* border: 2px solid greenyellow; */
     }
     /* *********** CARD css ************ */
 
@@ -344,7 +319,6 @@ nav a{
         font-size: 16px;
         /* line-height: 28px; */
         /* width: 320px; */
-        /* border: 2px solid red; */
     }
     
     
@@ -364,7 +338,7 @@ nav a{
 
 }
 
-/* ************* moblie css **** */
+/* ************* mobile css **** */
 
 @media (max-width: 600px) {
     .grid-container{
