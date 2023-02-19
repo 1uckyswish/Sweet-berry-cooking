@@ -33,6 +33,93 @@ a{
 
 /* ********* end of core styles ********* */
 
+/* ********HAMBURGER MENU CSS ************ */
+.menu {
+    display: none;
+    position: absolute;
+    top: 95px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    color: none;
+    background-color: var(--background-color);
+    box-shadow: 2px -1px 13px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 2px -1px 13px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px -1px 13px 4px rgba(0,0,0,0.1);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .menu.show {
+    display: block;
+    /* border: 2px solid purple; */
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
+    
+  }
+  
+  .menu a {
+    color: var(--yellow-accent);
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    /* border: 2px solid fuchsia; */
+    justify-content: space-around;
+    margin: 0 10px;
+  }
+  
+  .menu-icon {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 40px;
+    height: 100px; /* *** target if conflicts */
+    cursor: pointer;
+  }
+  
+  .menu-icon .icon {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-icon .icon:before,
+  .menu-icon .icon:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-icon .icon:before {
+    top: -10px;
+  }
+  
+  .menu-icon .icon:after {
+    top: 10px;
+  }
+  
+  .menu-icon.active .icon {
+    background-color: transparent;
+  }
+  
+  .menu-icon.active .icon:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .menu-icon.active .icon:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
 
 /* ************** NAVBAR CSS *********** */
 
@@ -56,6 +143,10 @@ nav a{
     font-weight: 400;
     font-size: 16px;
 }
+
+nav ul {
+    display: none;
+  }
 
 .img{
     width: 33%;
@@ -341,6 +432,19 @@ nav a{
 /* ************* mobile css **** */
 
 @media (max-width: 600px) {
+    
+    .header nav {
+    display: none;
+}
+    .menu-icon {
+    display: block;
+ }
+
+ .img img{
+    border: 2px solid red;
+}
+    
+    
     .grid-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -403,7 +507,6 @@ nav a{
         display: flex;
         width: 100%;
         padding: 0;
-        /* border: 2px solid red; */
         margin: 0;
         padding: 0;
         align-items: center;
@@ -427,8 +530,7 @@ nav a{
         gap: 50px;
         padding: 10px 30px 90px 30px;
     }
+    
+}
 
 
-
-
-  }
