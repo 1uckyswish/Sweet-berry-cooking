@@ -386,9 +386,9 @@ nav a{
     }    */
     .btn{
         display: none;
-     }
+ }
 
-     .header nav{
+    .header nav{
     visibility: hidden;
     }
 
