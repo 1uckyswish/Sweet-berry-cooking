@@ -23,7 +23,12 @@ a{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* You changed the grid template rows for the slogan and card container 
+    to auto in the media query but you could've done that here for all screen sizes */
+    /* Also, you gave auto for the footer row which is not needed as the footer will always
+    be the same size and don't need to grow. */
     grid-template-rows: 100px 590px 780px auto;
+    /* Superb! You’ve used grid template areas correctly! */
     grid-template-areas: 
     "head head head head"
     "slogan slogan slogan slogan"
@@ -41,6 +46,7 @@ a{
     right: 0;
     width: 200px;
     padding: 10px;
+    /* none is not a valid value for color, you can use transparent instead */
     color: none;
     background-color: var(--background-color);
     box-shadow: inset 0px 0px 3px;
@@ -123,6 +129,7 @@ a{
 
 /* ************** NAVBAR CSS *********** */
 
+/* Beautiful work on using CSS Grid and flex box together! */
 .header{
     background-color: var(--background-color);
     grid-area: head;
@@ -194,6 +201,7 @@ nav ul {
     flex-direction: column;
 }
 
+/* Great work on being detailed oriented and adding the right fonts to each component of the website. */
 .title-card h1{
     font-family: 'Roboto Serif';
     font-style: normal;
@@ -334,6 +342,13 @@ nav ul {
 
 /** tablet css **/
 @media screen and (max-width: 1157px){
+    /* You have some duplicated code in your media queries. 
+    You should just mention the changes you make in each class. 
+    For example, in the bottom .grid-container code, you should only 
+    have the grid-template-rows because that's the only thing that you 
+    changed. Everything else is the same.
+    You should only mention what is being changed in all media queries. */
+
     .grid-container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -404,6 +419,7 @@ nav ul {
 
     .card{
         position: relative;
+        /* 0 is not a valid calue for grid. */
         grid: 0;
     }
     

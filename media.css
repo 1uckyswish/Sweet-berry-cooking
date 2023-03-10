@@ -1,3 +1,7 @@
+/* You have a media.css file but not all your media queries are located in this file. 
+A lot of your media queries are still in the style.css. 
+Which is ok but if you are going to have a media query css file then 
+its best to have all media queries located in the same file. */
 @media screen and (max-width: 1000px){
     .slogan{
         background-color: var(--background-color);
