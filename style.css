@@ -35,10 +35,10 @@ a{
 
 /* ********HAMBURGER MENU CSS ************ */
 .menu {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 95px;
-    right: 0;
+    right: -100%;
     width: 200px;
     padding: 10px;
     color: none;
@@ -47,14 +47,16 @@ a{
     /* box-shadow: 0 0 5px; */
     z-index: 1;
     text-align: center;
+    transition: all 1s ease-in-out;
   }
   
-  .menu.show {
-    display: block;
+  .show {
+    /* display: block; */
+    right: 0%;
     /* border: 2px solid purple; */
     width: 100%;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 1s ease-in-out;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+    /* transition: all 1s ease-in-out; */
     
   }
   
