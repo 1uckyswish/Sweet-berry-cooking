@@ -1,4 +1,4 @@
-Sweet Berries Cooking School Landing Page
+##Sweet Berries Cooking School Landing Page
 
 Welcome to the Sweet Berries Cooking School landing page! This project is a part of my portfolio showcasing my web development skills. The purpose of this project is to create a landing page for a cooking school, Sweet Berries, which offers various cooking classes.
 Table of Contents
