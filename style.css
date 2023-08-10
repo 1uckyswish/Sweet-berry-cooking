@@ -12,13 +12,12 @@ a{
 }
 
 :root{
-  --background-color: #E6EEF7;
---card-color: #FDFDFD;
- --yellow-accent: #56b4f2;
-  --black-text: black;
---gray-text: #757575;
---outline: #CCCCCC;
-
+    --background-color: #F5F3EF;
+    --card-color: #FFFFFF;
+    --yellow-accent:#FEBD2F;
+    --black-text: #000000;
+    --gray-text: #646464;
+    --outline: #DCDCDC;
 }
 
 .grid-container{
@@ -166,7 +165,7 @@ nav ul {
     text-align: end;
 }
 .header button{
-    background-color: var(--yellow-accent);
+    background-color: var(--black-text);
     color: var(--background-color);
     padding: 13px 20px;
     border-radius: 20px;
